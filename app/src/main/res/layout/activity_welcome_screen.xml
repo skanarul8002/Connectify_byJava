@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Startup.WelcomeScreenActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"
+            android:gravity="center_horizontal"
+            android:text="Welcome to SKWhatsApp"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_margin="50dp"
+            android:src="@drawable/ic_whatsapp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Read our Privacy Policy.Tab Agree and Continue to Accept the Terms of Services"/>
+
+        <Button
+            android:id="@+id/btn_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="50dp"
+            android:background="#FFEB3B"
+            android:text="Agree and continue"
+            android:textColor="#FFC107" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginLeft="135dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="from"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F  A  C  E  B  O  O  K"
+                android:textStyle="bold"
+                android:textColor="#FFC107"/>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

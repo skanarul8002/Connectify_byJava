@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Connectify</string>
+    <string name="title_activity_just_google">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_status">My Status</string>
+    <string name="tab_to_add_status_update">Tab to add status update....</string>
+    <string name="status_image">Status Image</string>
+    <string name="delete_status">Delete Status</string>
+
+</resources>

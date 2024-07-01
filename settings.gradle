@@ -1,0 +1,4 @@
+
+
+rootProject.name = "SKWhatsApp"
+include ':app'

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anarul.skwhatsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Permissions required by the SDK -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Permissions required by the App -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_whatsapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SKWhatsApp">
+        <activity android:name="com.anarul.skwhatsapp.Startup.WelcomeScreenActivity" />
+        <activity android:name="com.anarul.skwhatsapp.SettingActivity" />
+        <activity android:name="com.anarul.skwhatsapp.GroupChatActivity" />
+        <activity android:name="com.anarul.skwhatsapp.ChatDetailActivity" />
+        <activity
+            android:name="com.anarul.skwhatsapp.justGoogle"
+            android:label="@string/title_activity_just_google" />
+        <activity
+            android:name="com.anarul.skwhatsapp.SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.anarul.skwhatsapp.SignUpActivity" />
+        <activity android:name="com.anarul.skwhatsapp.MainActivity" />
+    </application>
+
+</manifest>
